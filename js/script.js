@@ -77,6 +77,7 @@ const tra70e120 = students.filter((item) => {if(item.grades > 70 && item.id > 12
 console.log(tra70e120);
 
 //SNACK 3
+
 const bici = [
 	{
 		nome : 'Atala',
@@ -115,3 +116,52 @@ console.log(bici_leggera)
 let {nome, peso} = bici_leggera
 console.log(`la bici più leggera è la ${nome} e pesa ${peso}`)
 
+//SNACK 4
+
+const squadre = [
+	{
+		nome : 'Sassuolo',
+		punti : 0,
+		falli : 0
+	},
+	{
+		nome : 'Atalanta',
+		punti : 0,
+		falli : 0
+	},
+	{
+		nome : 'Bologna',
+		punti : 0,
+		falli : 0
+	},
+	{
+		nome : 'Cosenza',
+		punti : 0,
+		falli : 0
+	},
+	{
+		nome : 'Genoa',
+		punti : 0,
+		falli : 0
+	},
+]
+
+function generateRandomNumber(min, max){
+	return Math.floor(Math.random() * (max - min + 1) - min)
+}
+
+squadre.forEach((elem) => {
+	elem.punti = generateRandomNumber(1, 40)
+	elem.falli = generateRandomNumber(1, 10)
+})
+console.log(squadre)
+
+const newArray = squadre.map((elem) => {
+	const{nome, falli} = elem
+	let obj = {
+		nome,
+		falli
+	}
+	return obj
+})
+console.log(newArray)
