@@ -76,4 +76,42 @@ const tra70e120 = students.filter((item) => {if(item.grades > 70 && item.id > 12
 
 console.log(tra70e120);
 
+//SNACK 3
+const bici = [
+	{
+		nome : 'Atala',
+		peso : 10
+	},
+	{
+		nome : 'Bianchi',
+		peso : 12
+	},
+	{
+		nome : 'Masi',
+		peso : 9
+	},
+	{
+		nome : 'Factor',
+		peso : 11
+	},
+	{
+		nome : 'Orbea',
+		peso : 14
+	}
+]
+
+console.log(bici)
+
+let bici_leggera = bici[0]
+
+bici.forEach((elem) => {
+	if(elem.peso < bici_leggera.peso){
+		bici_leggera = elem
+	}
+})
+
+console.log(bici_leggera)
+
+let {nome, peso} = bici_leggera
+console.log(`la bici più leggera è la ${nome} e pesa ${peso}`)
 
