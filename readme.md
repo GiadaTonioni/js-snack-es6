@@ -26,3 +26,24 @@ Id  Name                Grades
     2.1 - utilizzare toUpperCase per rendere i nomi maiuscoli
 3 - utilizzando FILTER creare un nuovo array con tutti gli studenti che hanno un voto superiore a 70
 4 - utilizzando FILTER in modo più restrittivo creare un nuovo array con tutti gli studenti che hanno voto > 70 e id > 120
+
+PROBLEMA SNACK3: Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+1 - creare l'array di oggetti con nome e peso delle bici
+2 - creare una variabile di riferimento di una delle bici dell'array
+3 - creare un ciclo (for, Each) dove ci sia la condizione che individua la bici col peso minore delle altre presenti nell'array
+4 - destrucuring con le caratteristiche che ci interessano 
+5 - stampa in console con template literal
+
+PROBLEMA SNACK4: Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà: nome, punti fatt, falli subiti.
+Nome sarà l'unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle propriet: punti fatti e falli subiti.
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+1 - creare array di oggetti con nome, punti, falli delle squadre di calcio
+    1.1 - compilare nome e lasciare a 0 il resto
+2 - utilizzare Math.floor Math.random per fare una funzione min max con cui generare numeri random da inserire nei punti e nei falli
+3 - creare un ciclo (for, Each) dove richiamare la funzione per generare i punti e per generare i falli
+4 - utilizzare destructuring e map per creare un nuovo array dove ci siano solo i nomi delle squadre e i falli subiti
